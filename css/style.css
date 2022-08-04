@@ -1,4 +1,9 @@
 /* Our styles */
+:root {
+    /* define variables here */
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -147,10 +152,38 @@
 }
 
 .box {
-    border: 1px solid black;
+    position: relative;
     height: max(80%, 200px);
-    width: min(80%, 1500px);
+    width: min(90%, 1500px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    background-color: rgb(69, 9, 27);
+    color: rgb(255, 255, 255);
 }
+
+.box .tagline {
+    position: absolute;
+    left: 32px;
+    top: 64px;
+    width: 70%;
+    font-size: 48px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.box .button {
+    position: absolute;
+    left: 32px;
+    bottom: 64px;
+    text-align: left;
+    width: fit-content;
+    padding: 12px 28px;
+    background-color: rgb(29, 191, 115);
+}
+
 
 /* Part 5 styles */
 
