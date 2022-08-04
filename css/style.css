@@ -14,7 +14,7 @@
     /* Direct descendents */
     border: 1px solid black;
     text-align: center;
-}
+} 
 
 /* Part 1 styles */
 
@@ -22,6 +22,18 @@
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+#logo h1 {
+    color: #252122;
+	font-weight: 900;
+	font-size: 2.5em;
+	letter-spacing: -0.035em;
+    padding-left: 4em;
+}
+
+#logo a{
+    text-decoration:none;
 }
 
 #logo {
