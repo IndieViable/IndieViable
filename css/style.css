@@ -1,6 +1,7 @@
 /* Our styles */
 :root {
     /* define variables here */
+    --button-color: rgb(29, 191, 115);
 
 }
 
@@ -10,14 +11,13 @@
 }
 
 .container {
-    height: 2000px;
+    height: 2500px;
     display: grid;
-    grid-template-rows: 1fr 4fr 4fr 4fr 4fr 2fr;
+    grid-template-rows: 1fr 6fr 6fr 6fr 4fr 2fr;
 }
 
 .container>* {
     /* Direct descendents */
-    border: 1px solid black;
     text-align: center;
 }
 
@@ -99,6 +99,7 @@
     width: 80vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
     align-self: center;
     grid-gap: 16px;
 }
@@ -119,18 +120,64 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    background-color: rgb(241, 253, 247);
+}
+
+.part-4>.box {
+    height: max(80%, 200px);
+    width: min(95%, 1500px);
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 8px;
 }
 
 .part-4-left {
+    align-self: center;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    justify-content: center;
+    gap: 32px;
+    padding: 16px;
 }
 
-.reason-list ul {
+.part-4-left .tagline {
+    font-size: 32px;
+    text-align: left;
+}
+
+.part-4-left .reason-list ul {
     list-style-type: none;
-    border: 1px solid black;
+    text-align: left;
+}
+
+.reason-list ul li {
+    display: flex;
+    gap: 8px;
+    font-size: 18px;
+    line-height: normal;
+    margin: 12px;
+}
+
+.part-4-left .reason-list .check-icon {
+    width: 24px;
+    height: 24px;
+    fill: rgb(122, 125, 133);
+}
+
+.part-4-left .button {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: var(--button-color);
+    width: fit-content;
+    padding: 12px 28px;
+    border-radius: 5px;
+}
+
+.part-4-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .part-4-right .placeholder {
@@ -151,7 +198,7 @@
     justify-content: center;
 }
 
-.box {
+.part-5 .box {
     position: relative;
     height: max(80%, 200px);
     width: min(90%, 1500px);
@@ -164,7 +211,7 @@
     color: rgb(255, 255, 255);
 }
 
-.box .tagline {
+.part-5 .box .tagline {
     position: absolute;
     left: 32px;
     top: 64px;
@@ -174,14 +221,16 @@
     flex-wrap: wrap;
 }
 
-.box .button {
+.part-5 .box .button {
     position: absolute;
     left: 32px;
     bottom: 64px;
     text-align: left;
     width: fit-content;
     padding: 12px 28px;
-    background-color: rgb(29, 191, 115);
+    background-color: var(--button-color);
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 
@@ -194,3 +243,8 @@
 }
 
 /* Part 6 styles */
+
+
+.italic {
+    font-style: italic;
+}
