@@ -1,0 +1,163 @@
+/* Our styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 150vh;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr 4fr 4fr 2fr;
+}
+
+.container>* {
+    /* Direct descendents */
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Part 1 styles */
+
+.part-1 {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#logo {
+    justify-self: start;
+    align-self: center;
+}
+
+.menu-bar {
+    align-self: center;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Part 1 styles */
+
+/* Part 2 styles */
+
+.part-2 {
+    grid-row: 2/3;
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+}
+
+.part-2>* {
+    align-self: center;
+}
+
+.part-2-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.part-2-left>* {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.part-2-right>* {
+    border: 1px solid black;
+}
+
+.part-2-right .placeholder {
+    /* Restyle height and width for responsive sizing */
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+/* Part 2 styles */
+
+/* Part 3 styles */
+
+.part-3 {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    gap: 4px;
+}
+
+.card-container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-self: center;
+    grid-gap: 16px;
+}
+
+.card {
+    height: 200px;
+    /* change to auto once have actual img */
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Part 3 styles */
+
+/* Part 4 styles */
+
+.part-4 {
+    grid-row: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.part-4-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reason-list ul {
+    list-style-type: none;
+    border: 1px solid black;
+}
+
+.part-4-right .placeholder {
+    /* Restyle height and width for responsive sizing */
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+/* Part 4 styles */
+
+/* Part 5 styles */
+
+.part-5 {
+    grid-row: 5/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid black;
+    height: 80%;
+    width: min(80%, 1500px);
+}
+
+/* Part 5 styles */
+
+/* Part 6 styles */
+
+.part-6 {
+    grid-row: 6/7;
+}
+
+/* Part 6 styles */
