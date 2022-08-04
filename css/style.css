@@ -5,7 +5,7 @@
 }
 
 .container {
-    height: 150vh;
+    height: 2000px;
     display: grid;
     grid-template-rows: 1fr 4fr 4fr 4fr 4fr 2fr;
 }
@@ -148,7 +148,7 @@
 
 .box {
     border: 1px solid black;
-    height: 80%;
+    height: max(80%, 300px);
     width: min(80%, 1500px);
 }
 
