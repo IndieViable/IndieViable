@@ -148,7 +148,7 @@
 
 .box {
     border: 1px solid black;
-    height: max(80%, 300px);
+    height: max(80%, 200px);
     width: min(80%, 1500px);
 }
 
