@@ -36,7 +36,8 @@
 	font-weight: 900;
 	font-size: 2.5em;
 	letter-spacing: -0.035em;
-    padding-left: 4em;
+    padding-left: 5.5em;
+    margin-top: 0.9em;
 }
 
 #logo a{
@@ -51,37 +52,52 @@
 .search-bar-package {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.search-form {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .search-form input {
     border-radius: 4px 0 0 4px;
     font-size: 20px;
-    height: 48px;
+    height: 53px;
     border-right: 0;
-    padding: 7px 7px 7px 20px;
+    padding: 7px 7px 7px 25px;
     box-shadow: none;
     border: 1px solid #c5c6c9;
     box-sizing: border-box;
     color: #404145;
     width: 100%;
-    margin: 2em 2em 0 2em;
+    margin: 1.5em 0 0 2em;
+    background: url(https://i.imgur.com/lrQiTER.png) no-repeat 1%;
+    background-size: 18px;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .search-form button {
     border-radius: 0 4px 4px 0;
     font-size: 16px;
-    height: 48px;
+    height: 53px;
     padding: 12px 24px;
     font-weight: 700;
     flex-shrink: 0;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: #1dbf73;
+    background-color: #8fbc8f;
     color: #fff;
     text-shadow: none;
     text-decoration: none;
     border: 1px solid transparent;
-    
+    margin: 1.9em 0 0 0;
+}
+
+.search-form button:hover {
+    background-color: #1dbf73;
+    transition: 0.1s;
 }
 
 .menu-bar {
