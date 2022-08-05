@@ -19,9 +19,7 @@
 /* Part 1 styles */
 
 .part-1 {
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 }
 
 #logo h1 {
@@ -33,7 +31,7 @@
 }
 
 #logo a{
-    text-decoration:none;
+    text-decoration: none;
 }
 
 #logo {
@@ -41,14 +39,51 @@
     align-self: center;
 }
 
+.search-bar-package {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-form input {
+    border-radius: 4px 0 0 4px;
+    font-size: 20px;
+    height: 48px;
+    border-right: 0;
+    padding: 7px 7px 7px 20px;
+    box-shadow: none;
+    border: 1px solid #c5c6c9;
+    box-sizing: border-box;
+    color: #404145;
+    width: 100%;
+    margin: 2em 2em 0 2em;
+}
+
+.search-form button {
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    height: 48px;
+    padding: 12px 24px;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #1dbf73;
+    color: #fff;
+    text-shadow: none;
+    text-decoration: none;
+    border: 1px solid transparent;
+    
+}
+
 .menu-bar {
     align-self: center;
+    margin-left: 50em;
 }
 
 .menu-bar ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Part 1 styles */
