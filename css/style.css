@@ -92,24 +92,32 @@
     flex-direction: column;
     justify-content: center;
     padding: 16px;
-    gap: 4px;
+    gap: 16px;
+    background-color: rgb(150, 46, 12);
 }
 
-.card-container {
-    width: 80vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
+.part-3 .title {
     align-self: center;
-    grid-gap: 16px;
+    width: min(90vw, 1500px);
+    text-align: left;
+    font-size: 36px;
 }
 
-.card {
-    height: 200px;
-    /* change to auto once have actual img */
-    border: 1px solid black;
-    text-align: center;
+.part-3 .card-container {
+    width: min(90vw, 1500px);
+    align-self: center;
 }
+
+.part-3 .card {
+    padding: 16px;
+}
+
+.part-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 
 /* Part 3 styles */
 
@@ -125,7 +133,7 @@
 
 .part-4>.box {
     height: max(80%, 200px);
-    width: min(95%, 1500px);
+    width: min(90vw, 1500px);
     display: grid;
     align-self: center;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -201,7 +209,7 @@
 .part-5 .box {
     position: relative;
     height: max(80%, 200px);
-    width: min(90%, 1500px);
+    width: min(90vw, 1500px);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
