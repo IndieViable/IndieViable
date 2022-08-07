@@ -180,9 +180,9 @@
     grid-row: 2/3;
     display: flex;
     gap: 16px;
-    padding: 16px;
+    padding: 0;
     justify-content: center;
-    background-color: var(--background-1);
+    background-color: var(--background-3);
 }
 
 .part-2>* {
