@@ -13,6 +13,7 @@ Part 2:
 
 Part 3:
 1. Button
+2. Add background card for the images and box shadow for the pop
 
 Part 4:
 1. Remove button (reference fiverr light green)
