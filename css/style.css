@@ -1,8 +1,10 @@
 /* Our styles */
 :root {
     /* define variables here */
-    --button-color: rgb(29, 191, 115);
-
+    --button-color: #3185fc;
+    --background-1: #fff;
+    --background-2: #d2d5dd;
+    --background-3: #fbfbfd;
 }
 
 * {
@@ -31,7 +33,7 @@
     display: flex;
     z-index: 100;
     position: fixed;
-    background-color: white;
+    background-color: var(--background-1);
     width: 100%;
     height: 10%;
 }
@@ -80,7 +82,7 @@
     margin: 1.5em 0 0 2em;
     background: url(https://i.imgur.com/lrQiTER.png) no-repeat 1%;
     background-size: 18px;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--background-1);
 }
 
 .search-form button {
@@ -92,7 +94,7 @@
     flex-shrink: 0;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: #8fbc8f;
+    background-color: var(--background-1);
     color: #fff;
     text-shadow: none;
     text-decoration: none;
@@ -101,7 +103,7 @@
 }
 
 .search-form button:hover {
-    background-color: #1dbf73;
+    background-color: var(--background-1);
     transition: 0.1s;
 }
 
@@ -156,7 +158,7 @@
 }
 
 #join:hover {
-    background-color: #1dbf73;
+    background-color: var(--background-1);
     transition: 0.1s;
 }
 
@@ -170,7 +172,7 @@
     gap: 16px;
     padding: 16px;
     justify-content: center;
-    background-color: rgb(82, 39, 39);
+    background-color: var(--background-1);
 }
 
 .part-2>* {
@@ -179,7 +181,7 @@
 
 .main-tagline {
     width: 40%;
-    color: #fff;
+    color: #000;
     font-size: 48px;
     height: 112px;
     line-height: 56px;
@@ -215,7 +217,7 @@
     justify-content: center;
     padding: 16px;
     gap: 16px;
-    background-color: rgb(150, 46, 12);
+    background-color: var(--background-1);
 }
 
 .part-3 .title {
@@ -250,7 +252,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(241, 253, 247);
+    background-color: var(--background-1);
 }
 
 .part-4>.box {
@@ -296,9 +298,9 @@
 }
 
 .part-4-left .button {
-    color: rgb(255, 255, 255);
+    color: #000;
     font-size: 18px;
-    background-color: var(--button-color);
+    background-color: var(--background-1);
     width: fit-content;
     padding: 12px 28px;
     border-radius: 5px;
@@ -340,8 +342,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-    background-color: rgb(69, 9, 27);
-    color: rgb(255, 255, 255);
+    background-color: var(--background-1);
+    color: #000;
 }
 
 .part-5 .box .tagline {
@@ -364,6 +366,7 @@
     background-color: var(--button-color);
     border-radius: 5px;
     font-size: 18px;
+    color: #fff;
 }
 
 
