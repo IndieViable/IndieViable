@@ -4,12 +4,12 @@ Overall:
 3. Pictures
 
 Part 1:
-1. Center header
-2. Smaller, buttons shift to side nav bar
+1. Center header - Done
+2. Smaller, buttons shift to side nav bar - Done
 
 Part 2:
-1. Smaller, remove girl
-2. Smaller, add search bar below tagline
+1. Smaller, remove girl - Done
+2. Smaller, add search bar below tagline - Done
 
 Part 3:
 1. Button
@@ -23,7 +23,5 @@ Part 5:
 1. Bigger button
 2. Smaller, make it more rectangular (reference fiverr)
 
-
-
-Footer:
-https://www.firejet.io/
+Part 6:
+1. Add footer https://www.firejet.io/ -Done
