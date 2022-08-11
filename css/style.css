@@ -549,6 +549,10 @@ input::placeholder {
 
 /* Part 6 styles */
 @media only screen and (min-width: 900px) {
+    #navbutton {
+        display: none;
+    }
+
     #search-bar-2 {
         display: none;
     }
@@ -570,6 +574,14 @@ input::placeholder {
     .part-1-left {
         width: 100%;
         justify-content: space-between;
+    }
+
+    #small-menu {
+        width: 60px;
+    }
+
+    #navbutton {
+        width: 60px;
     }
 
     #search-bar-1 {
@@ -603,23 +615,11 @@ input::placeholder {
     }
 }
 
-@media only screen and (min-width: 1160px) {
-    #navbutton {
-        display: none;
-    }
-}
+@media only screen and (min-width: 1160px) {}
 
 @media only screen and (max-width: 1160px) {
     #search-bar-1 {
         display: none;
-    }
-
-    .part-1-left .search-bar-package {
-        grid-column: 3/4;
-    }
-
-    .part-1-left .search-form input {
-        width: 100%;
     }
 
     .part-2 .main-tagline {
