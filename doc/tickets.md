@@ -1,7 +1,6 @@
 Overall:
 1. Font
 2. Color themes
-3. Pictures
 
 Part 1:
 1. Center header - Done
