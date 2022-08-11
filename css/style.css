@@ -380,7 +380,6 @@
 .part-4-right {
     grid-column: 2/3;
     display: flex;
-    display: flex;
     justify-self: center;
     justify-content: center;
     align-items: center;
