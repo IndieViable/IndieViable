@@ -34,6 +34,40 @@
     font-style: italic;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 /* Part 1 styles */
 
 .part-1 {
@@ -147,11 +181,11 @@
 .menu ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
     margin: 0;
     padding: 0;
+    gap: 1rem;
 }
 
 .menu a {
@@ -161,7 +195,6 @@
 }
 
 .menu li {
-    padding: 0 10px;
     margin: 0;
     color: #62646a;
     font-weight: 600;
@@ -200,20 +233,31 @@
 .part-2 {
     grid-row: 2/3;
     display: flex;
-    flex-direction: row;
-    gap: 16px;
     padding: 0;
     justify-content: center;
     align-items: center;
     background-color: var(--background-3);
 }
 
-.part-2>* {
-    align-self: center;
+.part-2 .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: min(90vw, 1500px);
+}
+
+.part-2-left {
+    width: 60%;
+}
+
+.part-2-right {
+    width: 40%;
 }
 
 .main-tagline {
-    width: 40%;
+    width: 100%;
     color: #000;
     font-size: 70px;
     line-height: 75px;
@@ -222,7 +266,6 @@
     justify-content: start;
     text-align: left;
     letter-spacing: -0.2rem;
-
 }
 
 .main-tagline i {
@@ -230,9 +273,7 @@
     color: var(--button-color);
 }
 
-
 .human {
-    /* Restyle height and width for responsive sizing */
     height: 100%;
     width: auto;
     margin: 0;
@@ -507,19 +548,48 @@ input::placeholder {
 
 
 /* Part 6 styles */
-@media only screen and (min-width: 900px) {}
+@media only screen and (min-width: 900px) {
+    #search-bar-2 {
+        display: none;
+    }
+
+    #small-menu {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 900px) {
     .container {
         height: 4000px;
     }
 
-    .part-2 img {
+    .part-1-right {
+        display: none;
+    }
+
+    .part-1-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #search-bar-1 {
+        display: none;
+    }
+
+    .part-2-left {
+        width: 100%;
+    }
+
+    .part-2-right {
         display: none;
     }
 
     .part-2 .main-tagline {
-        width: 80%;
+        width: 100%;
+    }
+
+    .part-2 {
+        flex-direction: column;
     }
 
     .part-4>.box {
@@ -540,76 +610,28 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 1160px) {
-    .part-1-left {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 4fr 10fr;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .part-1-left span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #navbutton {
-        grid-column: 1/2;
-    }
-
-    #logo {
-        grid-column: 2/3;
-        line-height: normal;
-    }
-
-    .part-1-right {
+    #search-bar-1 {
         display: none;
     }
 
-    .search-bar-package {
+    .part-1-left .search-bar-package {
         grid-column: 3/4;
     }
 
-    .search-form input {
+    .part-1-left .search-form input {
         width: 100%;
     }
-}
 
+    .part-2 .main-tagline {
+        font-size: 50px;
+    }
 
+    #search-bar-2 {
+        display: flex;
+        width: 100%;
+    }
 
-
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    #search-bar-2 input {
+        width: 90%;
+    }
 }
