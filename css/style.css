@@ -463,6 +463,8 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    background-color: rgb(31 41 55);
+    color: var(--background-2);
 }
 
 .part-6 .box {
