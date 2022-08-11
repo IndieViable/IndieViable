@@ -41,4 +41,18 @@ $('.card-container').slick({
         // settings: "unslick"
         // instead of a settings object
     ]
+<<<<<<< HEAD
 });
+=======
+});
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.querySelector(".container").style.opacity = 0.7;
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.querySelector(".container").style.opacity = 1;
+}
+>>>>>>> Part-4-5

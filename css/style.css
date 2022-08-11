@@ -20,9 +20,15 @@
 }
 
 .container {
+<<<<<<< HEAD
     height: 2500px;
     display: grid;
     grid-template-rows: 1fr 6fr 6fr 6fr 4fr 2fr;
+=======
+    height: 3000px;
+    display: grid;
+    grid-template-rows: 1fr 10fr 12fr 12fr 8fr 6fr;
+>>>>>>> Part-4-5
 }
 
 .container>* {
@@ -34,6 +40,7 @@
     font-style: italic;
 }
 
+<<<<<<< HEAD
 /* Part 1 styles */
 
 .part-1 {
@@ -43,6 +50,75 @@
     background-color: var(--background-1);
     width: 100%;
     height: 10%;
+=======
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Part 1 styles */
+
+.part-1 {
+    grid-row: 1/2;
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    background-color: var(--background-1);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.part-1 .box {
+    width: min(90vw, 1500px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part-1-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.part-1-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+>>>>>>> Part-4-5
 }
 
 #logo h1 {
@@ -50,8 +126,13 @@
     font-weight: 900;
     font-size: 2.5em;
     letter-spacing: -0.035em;
+<<<<<<< HEAD
     padding-left: 5.5em;
     margin-top: 0.9em;
+=======
+    /*margin-top: 0.9em;*/
+    margin: 0;
+>>>>>>> Part-4-5
     font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
@@ -68,6 +149,7 @@
 
 .search-bar-package {
     display: flex;
+<<<<<<< HEAD
     flex-direction: row;
     flex-wrap: nowrap;
 }
@@ -127,10 +209,71 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+=======
+    flex-wrap: nowrap;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.search-form input {
+    border-radius: 4px 0 0 4px;
+    font-size: 20px;
+    height: 53px;
+    border-right: 0;
+    padding: 7px 7px 7px 25px;
+    box-shadow: none;
+    border: 1px solid #c5c6c9;
+    box-sizing: border-box;
+    color: #404145;
+    width: 18rem;
+    /*margin: 1.5em 0 0 2em;*/
+    background: url(https://i.imgur.com/lrQiTER.png) no-repeat 1%;
+    background-size: 18px;
+    background-color: var(--background-1);
+}
+
+.search-form button {
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    height: 53px;
+    padding: 12px 24px;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: #fff;
+    text-shadow: none;
+    text-decoration: none;
+    border: 1px solid transparent;
+    /*margin: 1.9em 0 0 0;*/
+}
+
+.search-form button:hover {
+    background-color: var(--background-1);
+    transition: 0.1s;
+}
+
+.menu {
+    align-self: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+>>>>>>> Part-4-5
     align-items: center;
     flex-grow: 1;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+=======
+    gap: 1rem;
+>>>>>>> Part-4-5
 }
 
 .menu a {
@@ -140,7 +283,10 @@
 }
 
 .menu li {
+<<<<<<< HEAD
     padding: 0 10px;
+=======
+>>>>>>> Part-4-5
     margin: 0;
     color: #62646a;
     font-weight: 600;
@@ -168,7 +314,11 @@
 }
 
 #join:hover {
+<<<<<<< HEAD
     background-color: var(--background-1);
+=======
+    background-color: var(--button-color);
+>>>>>>> Part-4-5
     transition: 0.1s;
 }
 
@@ -179,16 +329,28 @@
 .part-2 {
     grid-row: 2/3;
     display: flex;
+<<<<<<< HEAD
     gap: 16px;
     padding: 0;
     justify-content: center;
+=======
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+>>>>>>> Part-4-5
     background-color: var(--background-3);
 }
 
-.part-2>* {
-    align-self: center;
+.part-2 .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: min(90vw, 1500px);
 }
 
+<<<<<<< HEAD
 .main-tagline {
     width: 40%;
     color: #000;
@@ -214,6 +376,35 @@
 .human {
     /* Restyle height and width for responsive sizing */
     height: 600px;
+=======
+.part-2-left {
+    width: 60%;
+}
+
+.part-2-right {
+    width: 40%;
+}
+
+.main-tagline {
+    width: 100%;
+    color: #000;
+    font-size: 70px;
+    line-height: 75px;
+    font-weight: 710;
+    font-family: 'Inter', sans-serif;
+    justify-content: start;
+    text-align: left;
+    letter-spacing: -0.2rem;
+}
+
+.main-tagline i {
+    font-weight: 600;
+    color: var(--button-color);
+}
+
+.human {
+    height: 100%;
+>>>>>>> Part-4-5
     width: auto;
     margin: 0;
     padding: 0;
@@ -397,14 +588,158 @@
 
 .part-6 {
     grid-row: 6/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
+<<<<<<< HEAD
 /* Part 6 styles */
+=======
+.part-6 .box {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 6rem;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.part-6 .title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.contact,
+.links,
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+
+
+.contact ul,
+.links ul {
+    list-style-type: none;
+}
+
+.contact li,
+.links li,
+.form-header {
+    line-height: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.sign-up-button button {
+    width: 100px;
+    height: 40px;
+}
+
+input {
+    cursor: pointer;
+    height: 36px;
+}
+
+input::placeholder {
+    padding-left: 8px;
+}
+
+.sign-up-button button:hover {
+    cursor: pointer;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+
+/* Part 6 styles */
+@media only screen and (min-width: 900px) {
+    #navbutton {
+        display: none;
+    }
+
+    #search-bar-2 {
+        display: none;
+    }
+
+    #small-menu {
+        display: none;
+    }
+}
+>>>>>>> Part-4-5
 
 @media only screen and (max-width: 900px) {
     .container {
         height: 4000px;
+<<<<<<< HEAD
         grid-template-rows: 1fr 6fr 6fr 6fr 3fr 2fr;
+=======
+    }
+
+    .part-1-right {
+        display: none;
+    }
+
+    .part-1-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #small-menu {
+        width: 60px;
+    }
+
+    #navbutton {
+        width: 60px;
+    }
+
+    #search-bar-1 {
+        display: none;
+    }
+
+    .part-2-left {
+        width: 100%;
+    }
+
+    .part-2-right {
+        display: none;
+    }
+
+    .part-2 .main-tagline {
+        width: 100%;
+    }
+
+    .part-2 {
+        flex-direction: column;
+>>>>>>> Part-4-5
     }
 
     .part-4>.box {
@@ -416,4 +751,28 @@
     .part-4 img {
         width: 500px;
     }
+<<<<<<< HEAD
+=======
+}
+
+@media only screen and (min-width: 1160px) {}
+
+@media only screen and (max-width: 1160px) {
+    #search-bar-1 {
+        display: none;
+    }
+
+    .part-2 .main-tagline {
+        font-size: 50px;
+    }
+
+    #search-bar-2 {
+        display: flex;
+        width: 100%;
+    }
+
+    #search-bar-2 input {
+        width: 90%;
+    }
+>>>>>>> Part-4-5
 }

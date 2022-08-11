@@ -27,8 +27,16 @@
 </head>
 
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
   <div class="container">
     <div class="part-1 header">
+<<<<<<< HEAD
       <div id="logo">
         <h1><a href="index.html">IndieViable</a></h1>
       </div>
@@ -54,6 +62,64 @@
         </span>
       </h1>
       <img class='human' src="img\female.png" alt="Happy Face" />
+=======
+      <div class="box">
+        <div class="part-1-left">
+          <span id="navbutton" onclick="openNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19">
+              <rect y="16" width="23" height="3" rx="1.5" fill="#555"></rect>
+              <rect width="23" height="3" rx="1.5" fill="#555"></rect>
+              <rect y="8" width="23" height="3" rx="1.5" fill="#555"></rect>
+            </svg>
+          </span>
+          <div id="logo">
+            <h1><a href="index.html">IndieViable</a></h1>
+          </div>
+          <div id="search-bar-1" class="seach-bar-package">
+            <form class="search-form">
+              <input type="search" autocomplete="off" placeholder="Try &quot;Hubspot review&quot;" value="">
+              <button class="co-white submit-button bg-co-green-700">Search</button>
+            </form>
+          </div>
+          <div id="small-menu" class="menu">
+            <ul>
+              <li><a href="#" id="small-join">Join</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="part-1-right">
+          <div class="menu">
+            <ul>
+              <li><a href="#" id="about">About</a></li>
+              <li><a href="#" id="sign-in">Sign In</a></li>
+              <li><a href="#" id="join">Join</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-2">
+      <div class="box">
+        <div class="part-2-left">
+          <h1 class="main-tagline">
+            <span>Find the perfect
+              <i>freelance</i>
+              services for your business
+            </span>
+          </h1>
+          <div id="search-bar-2" class="seach-bar-package">
+            <form class="search-form">
+              <input type="search" autocomplete="off" placeholder="Try &quot;Hubspot review&quot;" value="">
+              <button class="co-white submit-button bg-co-green-700">Search</button>
+            </form>
+          </div>
+        </div>
+        <div class="part-2-right">
+          <img class='human' src="img\female.png" alt="Happy Face" />
+        </div>
+      </div>
+
+>>>>>>> Part-4-5
     </div>
     <div class="part-3">
       <div class="title">Featured Listings</div>
@@ -147,7 +213,49 @@
         <div class="button get-started">Get Started</div>
       </div>
     </div>
-    <div class="part-6 footer">Footer</div>
+    <div class="part-6 footer">
+      <div class="box">
+        <div class="contact">
+          <div class="contact-header title">Contact Us</div>
+          <div class="contact-list">
+            <ul>
+              <li class="click">+65 1234 5678</li>
+              <li class="click">Indieviable@gmail.com</li>
+              <li class="click">@IndieViable</li>
+              <li>Silicon Valley</li>
+            </ul>
+          </div>
+        </div>
+        <div class="links">
+          <div class="link-header title">Links</div>
+          <div class="link-list">
+            <ul>
+              <li class="click">Home</li>
+              <li class="click">Pricing</li>
+              <li class="click">About Us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscribe">
+          <div class="subscribe-header title">Subscribe</div>
+          <form>
+            <div class="form-header">Get updates delivered to your inbox.</div>
+            <div class="email-form">
+              <div class="input-box">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email">
+              </div>
+              <div class="sign-up-button">
+                <button type="button">Sign up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">© 2022 Copyright: IndieViable</div>
+    </div>
+
+  </div>
   </div>
   <!--Scripts-->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
