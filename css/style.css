@@ -231,9 +231,8 @@
 /* Part 2 styles */
 
 .part-2 {
-    grid-row: 2/3;
+    grid-row: 2;
     display: flex;
-    padding: 0;
     justify-content: center;
     align-items: center;
     background-color: var(--background-3);
@@ -289,9 +288,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 16px;
     gap: 16px;
     background-color: var(--background-1);
+    padding: 0;
+    margin-top: 10em;
 }
 
 .part-3 .title {
@@ -354,6 +354,7 @@
     text-align: left;
     font-weight: 700;
     letter-spacing: -0.035em;
+    margin-left: 0.5em;
 }
 
 .part-4-left .reason-list ul {
@@ -372,7 +373,7 @@
 
 .part-4-left .reason-list .check-icon {
     width: 24px;
-    height: 24px;
+    height: 30px;
     fill: rgb(122, 125, 133);
 }
 
@@ -388,14 +389,12 @@
 .part-4-right {
     grid-column: 2/3;
     display: flex;
-    display: flex;
     justify-self: center;
     justify-content: center;
     align-items: center;
 }
 
 .part-4-right img {
-    /* Restyle height and width for responsive sizing */
     width: min(70vw, 500px);
     height: auto;
     border-radius: 5px;
@@ -410,7 +409,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-2);
 }
 
 .part-5 .box {
@@ -422,7 +420,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-    /*background-color: var(--background-1);*/
+    background-color: var(--background-2);
     color: #000;
 }
 
@@ -463,6 +461,8 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    background-color: rgb(31 41 55);
+    color: var(--background-2);
 }
 
 .part-6 .box {
@@ -491,7 +491,6 @@
     align-items: center;
     text-align: left;
 }
-
 
 
 .contact ul,
@@ -546,8 +545,10 @@ input::placeholder {
     padding-top: 3rem;
 }
 
-
 /* Part 6 styles */
+
+/*Responsive styles */
+
 @media only screen and (min-width: 900px) {
     #navbutton {
         display: none;
@@ -607,11 +608,14 @@ input::placeholder {
     .part-4>.box {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        box-sizing: border-box;
     }
 
     .part-4 img {
-        width: 500px;
+        width: 92%;
+        height: auto;
+        box-sizing: border-box;
     }
 }
 
@@ -635,3 +639,5 @@ input::placeholder {
         width: 90%;
     }
 }
+
+/*Responsive styles */
