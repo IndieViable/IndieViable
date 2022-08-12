@@ -377,9 +377,9 @@
 }
 
 .part-4-left .button {
-    color: #000;
+    color: #fff;
     font-size: 18px;
-    background-color: var(--background-1);
+    background-color: var(--button-color);
     width: fit-content;
     padding: 12px 28px;
     border-radius: 5px;
