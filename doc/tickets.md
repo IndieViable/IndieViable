@@ -29,3 +29,5 @@ Sign in/ Join
 
 Sign in pop-up:
 1. Pop up not centering when user scroll to the bottom
+
+### Copy paste Aaron changes into main ###
