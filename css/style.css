@@ -57,7 +57,7 @@
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #fff;
 }
 
 .sidenav .closebtn {
@@ -170,7 +170,7 @@
 }
 
 .search-form button:hover {
-    background-color: var(--background-1);
+    background-color: var(--background-2);
     transition: 0.1s;
 }
 
@@ -413,7 +413,7 @@
 
 .part-5 .box {
     position: relative;
-    height: max(80%, 200px);
+    height: max(80%, 100px);
     width: min(90vw, 1500px);
     border-radius: 5px;
     display: flex;
@@ -422,12 +422,11 @@
     gap: 16px;
     background-color: var(--background-2);
     color: #000;
+    margin-top: -10em;
 }
 
 .part-5 .box .tagline {
-    position: absolute;
-    left: 32px;
-    top: 64px;
+    margin-left: 2em;
     width: 70%;
     font-size: 48px;
     text-align: left;
@@ -437,12 +436,11 @@
 }
 
 .part-5 .box .button {
-    position: absolute;
-    left: 32px;
-    bottom: 64px;
+    margin-left: 5em;
+    margin-top: 1.5em;
     text-align: left;
     width: fit-content;
-    padding: 12px 28px;
+    padding: 20px 35px;
     background-color: var(--button-color);
     border-radius: 5px;
     font-size: 18px;
@@ -617,7 +615,16 @@ input::placeholder {
         height: auto;
         box-sizing: border-box;
     }
-}
+
+    .part-5 .box {
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .part-5 .box .tagline {
+        font-size: 40px;
+    }
 
 @media only screen and (min-width: 1160px) {}
 
@@ -639,5 +646,4 @@ input::placeholder {
         width: 90%;
     }
 }
-
 /*Responsive styles */
