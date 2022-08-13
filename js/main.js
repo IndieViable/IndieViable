@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 // Script for carousell
->>>>>>> Tristan
 $('.card-container').slick({
     dots: true,
     infinite: true,
@@ -47,10 +44,7 @@ $('.card-container').slick({
     ]
 });
 
-<<<<<<< HEAD
-=======
 // Script for side nav bar
->>>>>>> Tristan
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.querySelector(".container").style.opacity = 0.7;
@@ -60,8 +54,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.querySelector(".container").style.opacity = 1;
 }
-<<<<<<< HEAD
-=======
 
 
 // Script for Sign in pop up
@@ -80,4 +72,3 @@ function closeForm() {
     $('body').css('overflow', 'auto');
     $('#overlay').remove();
 }
->>>>>>> Tristan

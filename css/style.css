@@ -1,12 +1,4 @@
 /* Our styles */
-<<<<<<< HEAD
-@font-face {
-    font-family: 'Inter';
-    src: url("Inter.otf");
-}
-
-=======
->>>>>>> Tristan
 :root {
     /* define variables here */
     --button-color: rgb(29, 191, 115);
@@ -20,11 +12,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-<<<<<<< HEAD
-}
-
-.container {
-=======
 }
 
 #overlay {
@@ -39,7 +26,6 @@
 
 .container {
     position: relative;
->>>>>>> Tristan
     height: 3000px;
     display: grid;
     grid-template-rows: 1fr 10fr 12fr 12fr 8fr 6fr;
@@ -54,19 +40,12 @@
     font-style: italic;
 }
 
-<<<<<<< HEAD
-=======
 /* side nav bar styles */
->>>>>>> Tristan
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-<<<<<<< HEAD
-    z-index: 2;
-=======
     z-index: 3;
->>>>>>> Tristan
     top: 0;
     left: 0;
     background-color: #111;
@@ -96,11 +75,8 @@
     margin-left: 50px;
 }
 
-<<<<<<< HEAD
-=======
 /* side nav bar styles */
 
->>>>>>> Tristan
 /* Part 1 styles */
 
 .part-1 {
@@ -221,14 +197,9 @@
     gap: 1rem;
 }
 
-<<<<<<< HEAD
-.menu a {
-    text-decoration: none;
-=======
 .menu button {
     all: unset;
     cursor: pointer;
->>>>>>> Tristan
     color: black;
     padding: 2px 10px;
 }
@@ -270,12 +241,9 @@
 /* Part 2 styles */
 
 .part-2 {
-    grid-row: 2;
+    grid-row: 2/3;
     display: flex;
-<<<<<<< HEAD
-=======
     padding: 0;
->>>>>>> Tristan
     justify-content: center;
     align-items: center;
     background-color: var(--background-3);
@@ -331,16 +299,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
-    gap: 16px;
-    background-color: var(--background-1);
-    padding: 0;
-    margin-top: 10em;
-=======
     padding: 16px;
     gap: 16px;
     background-color: var(--background-1);
->>>>>>> Tristan
 }
 
 .part-3 .title {
@@ -403,10 +364,6 @@
     text-align: left;
     font-weight: 700;
     letter-spacing: -0.035em;
-<<<<<<< HEAD
-    margin-left: 0.5em;
-=======
->>>>>>> Tristan
 }
 
 .part-4-left .reason-list ul {
@@ -425,12 +382,6 @@
 
 .part-4-left .reason-list .check-icon {
     width: 24px;
-<<<<<<< HEAD
-    height: 30px;
-    fill: rgb(122, 125, 133);
-}
-
-=======
     height: 24px;
     fill: rgb(122, 125, 133);
 }
@@ -444,7 +395,6 @@
     border-radius: 5px;
 }
 
->>>>>>> Tristan
 .part-4-right {
     grid-column: 2/3;
     display: flex;
@@ -455,10 +405,7 @@
 }
 
 .part-4-right img {
-<<<<<<< HEAD
-=======
     /* Restyle height and width for responsive sizing */
->>>>>>> Tristan
     width: min(70vw, 500px);
     height: auto;
     border-radius: 5px;
@@ -485,11 +432,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-<<<<<<< HEAD
-    background-color: var(--background-2);
-=======
     /*background-color: var(--background-1);*/
->>>>>>> Tristan
     color: #000;
 }
 
@@ -530,11 +473,6 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-<<<<<<< HEAD
-    background-color: rgb(31 41 55);
-    color: var(--background-2);
-=======
->>>>>>> Tristan
 }
 
 .part-6 .box {
@@ -565,10 +503,7 @@
 }
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> Tristan
 .contact ul,
 .links ul {
     list-style-type: none;
@@ -623,9 +558,6 @@ input::placeholder {
 
 /* Part 6 styles */
 
-<<<<<<< HEAD
-/*Responsive styles */
-=======
 /* Join pop up styles */
 #sign-in-form {
     background-color: var(--background-1);
@@ -741,9 +673,7 @@ input::placeholder {
     color: var(--button-color);
 }
 
-
 /* Join pop up styles */
->>>>>>> Tristan
 
 @media only screen and (min-width: 900px) {
     #navbutton {
@@ -804,22 +734,11 @@ input::placeholder {
     .part-4>.box {
         display: flex;
         flex-direction: column;
-<<<<<<< HEAD
-        justify-content: center;
-        box-sizing: border-box;
-    }
-
-    .part-4 img {
-        width: 92%;
-        height: auto;
-        box-sizing: border-box;
-=======
         justify-content: space-between;
     }
 
     .part-4 img {
         width: 500px;
->>>>>>> Tristan
     }
 }
 
@@ -842,10 +761,4 @@ input::placeholder {
     #search-bar-2 input {
         width: 90%;
     }
-<<<<<<< HEAD
 }
-
-/*Responsive styles */
-=======
-}
->>>>>>> Tristan
