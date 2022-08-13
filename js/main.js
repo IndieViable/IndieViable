@@ -1,3 +1,4 @@
+// Script for carousell
 $('.card-container').slick({
     dots: true,
     infinite: true,
@@ -43,6 +44,7 @@ $('.card-container').slick({
     ]
 });
 
+// Script for side nav bar
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.querySelector(".container").style.opacity = 0.7;
@@ -51,8 +53,22 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.querySelector(".container").style.opacity = 1;
-<<<<<<< HEAD
 }
-=======
+
+
+// Script for Sign in pop up
+function openForm() {
+    $('#sign-in-form').show();
+    $('body').css('overflow', 'hidden');
+    $('<div/>', {
+        id: "overlay"
+    }).appendTo(".container");
+    $('#overlay').attr('onclick', 'closeForm()');
+
 }
->>>>>>> main
+
+function closeForm() {
+    $('#sign-in-form').hide();
+    $('body').css('overflow', 'auto');
+    $('#overlay').remove();
+}
