@@ -1,9 +1,12 @@
 /* Our styles */
+<<<<<<< HEAD
 @font-face {
     font-family: 'Inter';
     src: url("Inter.otf");
 }
 
+=======
+>>>>>>> Tristan
 :root {
     /* define variables here */
     --button-color: rgb(29, 191, 115);
@@ -17,9 +20,26 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+<<<<<<< HEAD
 }
 
 .container {
+=======
+}
+
+#overlay {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+>>>>>>> Tristan
     height: 3000px;
     display: grid;
     grid-template-rows: 1fr 10fr 12fr 12fr 8fr 6fr;
@@ -34,11 +54,19 @@
     font-style: italic;
 }
 
+<<<<<<< HEAD
+=======
+/* side nav bar styles */
+>>>>>>> Tristan
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
+<<<<<<< HEAD
     z-index: 2;
+=======
+    z-index: 3;
+>>>>>>> Tristan
     top: 0;
     left: 0;
     background-color: #111;
@@ -68,6 +96,11 @@
     margin-left: 50px;
 }
 
+<<<<<<< HEAD
+=======
+/* side nav bar styles */
+
+>>>>>>> Tristan
 /* Part 1 styles */
 
 .part-1 {
@@ -188,8 +221,14 @@
     gap: 1rem;
 }
 
+<<<<<<< HEAD
 .menu a {
     text-decoration: none;
+=======
+.menu button {
+    all: unset;
+    cursor: pointer;
+>>>>>>> Tristan
     color: black;
     padding: 2px 10px;
 }
@@ -233,6 +272,10 @@
 .part-2 {
     grid-row: 2;
     display: flex;
+<<<<<<< HEAD
+=======
+    padding: 0;
+>>>>>>> Tristan
     justify-content: center;
     align-items: center;
     background-color: var(--background-3);
@@ -288,10 +331,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+<<<<<<< HEAD
     gap: 16px;
     background-color: var(--background-1);
     padding: 0;
     margin-top: 10em;
+=======
+    padding: 16px;
+    gap: 16px;
+    background-color: var(--background-1);
+>>>>>>> Tristan
 }
 
 .part-3 .title {
@@ -354,7 +403,10 @@
     text-align: left;
     font-weight: 700;
     letter-spacing: -0.035em;
+<<<<<<< HEAD
     margin-left: 0.5em;
+=======
+>>>>>>> Tristan
 }
 
 .part-4-left .reason-list ul {
@@ -373,10 +425,26 @@
 
 .part-4-left .reason-list .check-icon {
     width: 24px;
+<<<<<<< HEAD
     height: 30px;
     fill: rgb(122, 125, 133);
 }
 
+=======
+    height: 24px;
+    fill: rgb(122, 125, 133);
+}
+
+.part-4-left .button {
+    color: #000;
+    font-size: 18px;
+    background-color: var(--background-1);
+    width: fit-content;
+    padding: 12px 28px;
+    border-radius: 5px;
+}
+
+>>>>>>> Tristan
 .part-4-right {
     grid-column: 2/3;
     display: flex;
@@ -387,6 +455,10 @@
 }
 
 .part-4-right img {
+<<<<<<< HEAD
+=======
+    /* Restyle height and width for responsive sizing */
+>>>>>>> Tristan
     width: min(70vw, 500px);
     height: auto;
     border-radius: 5px;
@@ -401,6 +473,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--background-2);
 }
 
 .part-5 .box {
@@ -412,7 +485,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+<<<<<<< HEAD
     background-color: var(--background-2);
+=======
+    /*background-color: var(--background-1);*/
+>>>>>>> Tristan
     color: #000;
 }
 
@@ -453,8 +530,11 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+<<<<<<< HEAD
     background-color: rgb(31 41 55);
     color: var(--background-2);
+=======
+>>>>>>> Tristan
 }
 
 .part-6 .box {
@@ -485,6 +565,10 @@
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Tristan
 .contact ul,
 .links ul {
     list-style-type: none;
@@ -539,7 +623,127 @@ input::placeholder {
 
 /* Part 6 styles */
 
+<<<<<<< HEAD
 /*Responsive styles */
+=======
+/* Join pop up styles */
+#sign-in-form {
+    background-color: var(--background-1);
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    width: 400px;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#sign-in-form h4 {
+    text-align: center;
+    color: #404145;
+    font-size: 24px;
+}
+
+.social-signing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-signing button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 12px 30px 12px 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #e4e5e7;
+    margin: 12px 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#facebook-signing-button {
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
+}
+
+#facebook-signing-button .provider-icon {
+    fill: #fff;
+}
+
+#facebook-signing-button p {
+    color: #fff;
+}
+
+.social-signing button p {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-separator {
+    width: 100%;
+    display: block;
+    align-items: center;
+    border-bottom: 1px solid #e4e5e7;
+    height: 12px;
+    margin: 20px 0 32px;
+    text-align: center;
+}
+
+.form-separator span {
+    width: 100%;
+    text-transform: uppercase;
+    color: #62646a;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 0 8px;
+    background-color: var(--background-1);
+}
+
+.field * {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sign-in-form .submit-button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e4e5e7;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forgot-password label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.forgot-password button {
+    all: unset;
+    cursor: pointer;
+    color: var(--button-color);
+}
+
+
+/* Join pop up styles */
+>>>>>>> Tristan
 
 @media only screen and (min-width: 900px) {
     #navbutton {
@@ -600,6 +804,7 @@ input::placeholder {
     .part-4>.box {
         display: flex;
         flex-direction: column;
+<<<<<<< HEAD
         justify-content: center;
         box-sizing: border-box;
     }
@@ -608,6 +813,13 @@ input::placeholder {
         width: 92%;
         height: auto;
         box-sizing: border-box;
+=======
+        justify-content: space-between;
+    }
+
+    .part-4 img {
+        width: 500px;
+>>>>>>> Tristan
     }
 }
 
@@ -630,6 +842,10 @@ input::placeholder {
     #search-bar-2 input {
         width: 90%;
     }
+<<<<<<< HEAD
 }
 
 /*Responsive styles */
+=======
+}
+>>>>>>> Tristan
