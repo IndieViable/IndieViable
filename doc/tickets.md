@@ -1,10 +1,6 @@
 Overall:
 1. Font
 2. Color themes
-<<<<<<< HEAD
-3. Pictures
-=======
->>>>>>> main
 
 Part 1:
 1. Center header - Done
@@ -27,8 +23,7 @@ Part 5:
 2. Smaller, make it more rectangular (reference fiverr)
 
 Part 6:
-<<<<<<< HEAD
 1. Add footer https://www.firejet.io/ -Done
-=======
-1. Add footer https://www.firejet.io/ -Done
->>>>>>> main
+
+Pop-up:
+1. Pop up not centering when user scroll to the bottom
