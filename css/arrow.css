@@ -1,0 +1,33 @@
+
+.part-3 .slick-arrow {
+    background-color: #fff;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.part-3 .slick-arrow::after {
+    content: "";
+    display: inline-block;
+    background-image: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/arrows.a8b0bad.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 64px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.part-3 .slick-prev:hover, .slick-prev:focus {
+    background-color: #fff;
+}
+
+.part-3 .slick-next:hover, .slick-next:focus {
+    background-color: #fff;
+}
