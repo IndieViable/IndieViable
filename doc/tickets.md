@@ -3,16 +3,7 @@ Overall:
 2. Color themes
 
 Part 3:
-1. Button
-2. Add background card for the images and box shadow for the pop
-
-Part 4:
-1. Remove button (reference fiverr light green)
-2. When picture is below, make it bigger, decrease gap between text and pic
-
-Part 5:
-1. Bigger button
-2. Smaller, make it more rectangular (reference fiverr)
+1. Add background card for the images and box shadow for the pop
 
 Nav bar
 1. Change items to header menu items
@@ -29,5 +20,3 @@ Sign in/ Join
 
 Sign in pop-up:
 1. Pop up not centering when user scroll to the bottom
-
-### Copy paste Aaron changes into main ###

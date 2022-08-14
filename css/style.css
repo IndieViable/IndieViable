@@ -364,6 +364,7 @@
     text-align: left;
     font-weight: 700;
     letter-spacing: -0.035em;
+    margin-left: 0.5em;
 }
 
 .part-4-left .reason-list ul {
@@ -382,14 +383,14 @@
 
 .part-4-left .reason-list .check-icon {
     width: 24px;
-    height: 24px;
+    height: 30px;
     fill: rgb(122, 125, 133);
 }
 
 .part-4-left .button {
-    color: #000;
+    color: #fff;
     font-size: 18px;
-    background-color: var(--background-1);
+    background-color: var(--button-color);
     width: fit-content;
     padding: 12px 28px;
     border-radius: 5px;
@@ -398,14 +399,12 @@
 .part-4-right {
     grid-column: 2/3;
     display: flex;
-    display: flex;
     justify-self: center;
     justify-content: center;
     align-items: center;
 }
 
 .part-4-right img {
-    /* Restyle height and width for responsive sizing */
     width: min(70vw, 500px);
     height: auto;
     border-radius: 5px;
@@ -420,26 +419,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-2);
 }
 
 .part-5 .box {
     position: relative;
-    height: max(80%, 200px);
+    height: max(80%, 100px);
     width: min(90vw, 1500px);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-    /*background-color: var(--background-1);*/
+    background-color: var(--background-2);
     color: #000;
+    margin-top: -10em;
 }
 
 .part-5 .box .tagline {
-    position: absolute;
-    left: 32px;
-    top: 64px;
+    margin-left: 2em;
     width: 70%;
     font-size: 48px;
     text-align: left;
@@ -449,12 +446,11 @@
 }
 
 .part-5 .box .button {
-    position: absolute;
-    left: 32px;
-    bottom: 64px;
+    margin-left: 5em;
+    margin-top: 1.5em;
     text-align: left;
     width: fit-content;
-    padding: 12px 28px;
+    padding: 20px 35px;
     background-color: var(--button-color);
     border-radius: 5px;
     font-size: 18px;
@@ -473,6 +469,8 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    background-color: rgb(31 41 55);
+    color: #fff;
 }
 
 .part-6 .box {
@@ -734,11 +732,24 @@ input::placeholder {
     .part-4>.box {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        box-sizing: border-box;
     }
 
     .part-4 img {
-        width: 500px;
+        width: 92%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .part-5 .box {
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .part-5 .box .tagline {
+        font-size: 40px;
     }
 }
 
