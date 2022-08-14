@@ -3,7 +3,7 @@ Overall:
 2. Color themes
 
 Part 3:
-1. Add background card for the images and box shadow for the pop
+1. Add background card for the images
 
 Nav bar
 1. Change items to header menu items

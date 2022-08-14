@@ -311,6 +311,7 @@
     font-size: 36px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
+    margin-left: 1em;
 }
 
 .part-3 .card-container {
@@ -321,7 +322,7 @@
 .part-3 .card {
     margin: 16px;
     box-sizing: border-box;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
 }
 
 .part-3 img {
